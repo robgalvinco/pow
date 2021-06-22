@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Silver South Script Alt';
+    src: url('SilverSouthScriptAlt.woff2') format('woff2'),
+        url('SilverSouthScriptAlt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silver South Serif';
+    src: url('SilverSouthSerif.woff2') format('woff2'),
+        url('SilverSouthSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silver South Script';
+    src: url('SilverSouthScript.woff2') format('woff2'),
+        url('SilverSouthScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
