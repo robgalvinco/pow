@@ -784,7 +784,7 @@ blockquote footer.powkit { color: #828282; }
     .powkit-parallax-bg { width: 620px; }
     .customer-bg-section { top: 80px; bottom: inherit; }
     .landing-page-auto-slider .swiper-container.swiper-auto-slide .swiper-slide { width: 40% !important; }
-
+    .parallax { background-attachment: inherit !important; background-position: center !important; }
 
 }
 
