@@ -193,8 +193,24 @@
                     sp_on_page.push({
                         id:app,
                         components: []
-                    })
-                }              
+                    });
+                    __FOUND = 0;
+                }  
+                var __FOUNDc = -1;
+                for(var i=0; i<sp_on_page[__FOUND].components.length; i++) {
+                    if(sp_on_page[__FOUND].components.id == component) {
+                        // __FOUND is set to the index of the element
+                        __FOUNDc = i;
+                        break;
+                    }
+                }  
+                if(__FOUNDc==-1){
+                    sp_on_page[__FOUND].components.push({
+                        id:component
+                    });
+
+                }
+
             });
             console.log("Apps",sp_on_page); 
             sp_on_page.forEach(function(app){
@@ -205,7 +221,10 @@
                 html +='                        <div class="kpa-nav-title">'+app.id+'</div>';
                 html +='                    </span>';
                 html +='                    <ul class="kpa-list-circle">';
-                html +='                        <li class="kpa-text-uppercase"><span class="" data-href="#">Section Name</span></li>'
+                app.components.forEach(function(component){
+                    var component_name = component.id;
+                    html +='                        <li class="kpa-text-uppercase"><span class="" data-href="#">'+component_name+'</span></li>'
+                });
                 html +='                    </ul>';
                 html +='                </nav>';
                 $(".kpa-page-superpowers").append(html);
