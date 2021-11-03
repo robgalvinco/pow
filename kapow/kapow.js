@@ -59,7 +59,7 @@ $( document ).ready(function() {
         var f = document.getElementsByTagName("script")[0];
         j = document.createElement("script");
         j.async = false;
-        j.src = "https://cdn.jsdelivr.net/gh/robgalvinco/pow/kapow/kapow-admin.js";
+        j.src = "https://cdn.jsdelivr.net/gh/robgalvinco/pow@latest/kapow/kapow-admin.js";
         f.parentNode.insertBefore(j, f);
 
     }
