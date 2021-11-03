@@ -182,7 +182,7 @@
 
             j3 = document.createElement("link");
             j3.rel = "stylesheet";
-            j3.href = "https://cdn.jsdelivr.net/gh/robgalvinco/pow/kapow/kapow-admin.css";
+            j3.href = "https://cdn.jsdelivr.net/gh/robgalvinco/pow@latest/kapow/kapow-siteadmin.css";
             f.parentNode.insertBefore(j3, f);
 
         // inject html for admin popup
