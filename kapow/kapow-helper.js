@@ -55,6 +55,7 @@ $( document ).ready(function() {
         
     
     }
+    /*
     if(window.location.href.includes("manage/site_builder")){
         var f = document.getElementsByTagName("script")[0];
         j = document.createElement("script");
@@ -63,5 +64,6 @@ $( document ).ready(function() {
         f.parentNode.insertBefore(j, f);
 
     }
+    */
 })    
 
