@@ -907,7 +907,7 @@ input[type="checkbox"].error { box-shadow: 0px 0px 0px 1px rgb(255 0 0), 1px 1px
     Button
 ====================================== */
 
-.btn { display:inline-block; border:2px solid transparent; border-radius: 0; text-transform: uppercase; width: auto; font-family: var(--font-family-primary,'Poppins', sans-serif); font-weight: 500; }
+.btn { display:inline-block; border:2px solid transparent; border-radius: 0; text-transform: uppercase; width: auto; font-family: var(--font-family-button,'Poppins', sans-serif); font-weight: 500; }
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus { outline: medium none; outline-offset: 0; }
 input.btn:focus { border-width: 2px; }
 .btn.active, .btn:active, .btn:focus { box-shadow: none; }
