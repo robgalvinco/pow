@@ -244,13 +244,13 @@ section.powkit.half-section { padding:80px 0; }
 .button-font { font-family: var(--font-family-heading,'Roboto', sans-serif); }
 
 /* heading sizes */
-h1, h2, h3, h4, h5, h6 { margin:0 0 25px 0; padding:0; letter-spacing: -0.5px; font-weight: inherit; }
-h1 { font-size:3.4rem; line-height: 3.9rem; font-weight:700;}
-h2 { font-size:3.0rem; line-height:3.25rem; font-weight:700;}
-h3 { font-size:2.85rem; line-height:3.0rem; }
-h4 { font-size:2.65rem; line-height:2.8rem; }
-h5 { font-size:2.30rem; line-height:3rem; }
-h6 { font-size:1.4rem; line-height:1.6rem; }
+.powkit h1, .powkit h2, .powkit h3, .powkit h4, .powkit h5, .powkit h6 { margin:0 0 25px 0; padding:0; letter-spacing: -0.5px; font-weight: inherit; }
+.powkit h1 { font-size:3.4rem; line-height: 3.9rem; font-weight:700;}
+.powkit h2 { font-size:3.0rem; line-height:3.25rem; font-weight:700;}
+.powkit h3 { font-size:2.85rem; line-height:3.0rem; }
+.powkit h4 { font-size:2.65rem; line-height:2.8rem; }
+.powkit h5 { font-size:2.30rem; line-height:3rem; }
+.powkit h6 { font-size:1.4rem; line-height:1.6rem; }
 
 /* font sizes */
 .font-size-0 { font-size: 0; }
@@ -460,7 +460,7 @@ blockquote footer.powkit { color: #828282; }
 
 @media (max-width: 1199px) {
     /* typography */
-    h1, h2, h3, h4, h5, h6 { margin:0 0 15px; }
+    .powkit h1, .powkit h2, .powkit h3, .powkit h4, .powkit h5, .powkit h6 { margin:0 0 15px; }
 
     /* text size */
     .title-large { font-size: 90px; line-height: 90px; }
@@ -512,7 +512,7 @@ blockquote footer.powkit { color: #828282; }
 }
 
 @media (max-width: 991px) {
-    p { margin: 0 0 20px; }
+    .powkit p { margin: 0 0 20px; }
 
     /* text size */
     .text-large { font-size:16px; line-height:22px; }
@@ -572,7 +572,7 @@ blockquote footer.powkit { color: #828282; }
 @media (max-width: 767px) {
 
     /* typography */
-    p { margin: 0 0 15px }
+    .powkit p { margin: 0 0 15px }
 
     /* text size */
     .title-extra-small { font-size: 20px; line-height: 30px; }
