@@ -1,4 +1,5 @@
 
+
 /*html { font-size: 14px; }*/
 *, *::after, *::before { box-sizing: border-box !important; }
 body { 
@@ -10,30 +11,33 @@ body {
     padding: 0; margin: 0; -webkit-font-smoothing: 
     antialiased; -moz-osx-font-smoothing: grayscale; word-break: break-word }
 body, html { -moz-osx-font-smoothing: grayscale; }
-a:hover, a:focus { text-decoration: none; outline: none; outline-offset:0; color: #0038e3; }
-a, a:active, a:focus { color: #828282; }
-a, .btn, input, textarea, select { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
-img { max-width: 100%; height: auto; }
-video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
-p { margin: 0 0 25px; }
-b, strong { font-weight: 600; }
+/*
+.powkit a:hover, .powkit a:focus { text-decoration: none; outline: none; outline-offset:0; color: #0038e3; }
+.powkit a, .powkit a:active, .powkit a:focus { color: #828282; }
+*/
+
+.powkit a, .powkit .btn, .powkit input, .powkit textarea, .powkit select { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
+.powkit img { max-width: 100%; height: auto; }
+.powkit video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
+.powkit p { margin: 0 0 25px; }
+/*b, strong { font-weight: 600; }*/
 .alt-font strong { font-weight: 600; }
 .last-paragraph-no-margin p:last-of-type { margin-bottom:0; }
-ul, ol, dl { list-style-position: outside; margin-bottom: 25px; }
-ul { margin: 0; padding: 0; }
-input, textarea, select { border: 1px solid #dfdfdf; padding: 10px 15px; width: 100%; margin: 0 0 15px 0; max-width: 100%; resize: none; outline: none; color: #828282; line-height: initial; }
-select { background-image: url(https://www.robgalvin.co/kit/images/down-arrow.png); background-position: right 14px center; background-repeat: no-repeat; background-size: 10px; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer;}
+.powkit ul, .powkit ol, .powkit dl { list-style-position: outside; margin-bottom: 25px; }
+.powkit ul { margin: 0; padding: 0; }
+.powkit input, .powkit textarea, .powkit select { border: 1px solid #dfdfdf; padding: 10px 15px; width: 100%; margin: 0 0 15px 0; max-width: 100%; resize: none; outline: none; color: #828282; line-height: initial; }
+.powkit select { background-image: url(https://www.robgalvin.co/kit/images/down-arrow.png); background-position: right 14px center; background-repeat: no-repeat; background-size: 10px; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer;}
 
-input[type="submit"] { width: auto; }
-input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none; }
-input:focus, textarea:focus { border: 1px solid #b9b9b9; outline: none; }
-input[type="submit"]:focus { outline: none; }
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; margin: 0;  }
-input::-ms-clear { display: none; }
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus, select:-webkit-autofill:active { transition: background-color 5000s; transition: all 0s 50000s;  -webkit-animation-name: autofill; -webkit-animation-fill-mode: both;  }
-select::-ms-expand { display:none; }
-iframe { border: 0; }
-button, button:focus, button:hover { outline: none; }
+.powkit input[type="submit"] { width: auto; }
+.powkit input[type="button"], .powkit input[type="text"], .powkit input[type="email"], .powkit input[type="search"], .powkit input[type="password"], .powkit textarea, .powkit input[type="submit"] { -webkit-appearance: none; }
+.powkit input:focus, .powkit textarea:focus { border: 1px solid #b9b9b9; outline: none; }
+.powkit input[type="submit"]:focus { outline: none; }
+.powkit input[type=number]::-webkit-inner-spin-button, .powkit input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; margin: 0;  }
+.powkit input::-ms-clear { display: none; }
+.powkit input:-webkit-autofill, .powkit input:-webkit-autofill:hover, .powkit input:-webkit-autofill:focus, .powkit input:-webkit-autofill:active, .powkit select:-webkit-autofill, .powkit select:-webkit-autofill:hover, .powkit select:-webkit-autofill:focus, .powkit select:-webkit-autofill:active { transition: background-color 5000s; transition: all 0s 50000s;  -webkit-animation-name: autofill; -webkit-animation-fill-mode: both;  }
+.powkit select::-ms-expand { display:none; }
+.powkit iframe { border: 0; }
+.powkit button, .powkit button:focus, .powkit button:hover { outline: none; }
 .main-content { z-index: 2; background-color: #fff; overflow: visible; position: relative; }
 
 ::selection { color: #000; background:#dbdbdb; }
@@ -103,7 +107,7 @@ section.powkit.half-section { padding:80px 0; }
     section.powkit.big-section { padding:120px 0; }
     section.powkit.extra-big-section { padding:160px 0; }
     .center-col-style .custom-col { min-height: 0; }
-    .parallax { background-attachment: inherit !important; background-position: center !important; }
+    
     .lg-last-order { order: 10; }
     .html-video { height: 100%; }
 
@@ -228,6 +232,8 @@ section.powkit.half-section { padding:80px 0; }
 
 @-webkit-keyframes video-icon-sonar { 0% { opacity: 1; -webkit-transform: scale(0.1); transform: scale(0.1); } 100% { opacity: 0; -webkit-transform: scale(1.10); transform: scale(1.10); } }
 @keyframes video-icon-sonar { 0% { opacity: 1; -webkit-transform: scale(0.1); transform: scale(0.1); } 100% { opacity: 0; -webkit-transform: scale(1.10); transform: scale(1.10); } }
+
+
 
 
 
