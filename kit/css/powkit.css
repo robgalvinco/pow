@@ -18,7 +18,7 @@ body, html { -moz-osx-font-smoothing: grayscale; }
 
 .powkit a, .powkit .btn, .powkit input, .powkit textarea, .powkit select { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 .powkit img { max-width: 100%; height: auto; }
-.powkit video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
+video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
 .powkit p { margin: 0 0 25px; }
 /*b, strong { font-weight: 600; }*/
 .alt-font strong { font-weight: 600; }
