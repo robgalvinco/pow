@@ -11614,7 +11614,7 @@ aside .instafeed-grid.gutter-double-extra-large { margin-left: -20px; margin-rig
 
 
 .ws-no-wrap {
-    white-space: 
+    white-space: nowrap;
 }
 .embed-responsive-bs.pow {
     position: relative;
@@ -11653,4 +11653,9 @@ aside .instafeed-grid.gutter-double-extra-large { margin-left: -20px; margin-rig
 }
 .powkit figcaption:before {
     display:none;
+}
+
+/* thinkific compat issues */
+.course-curriculum__chapter-list .collapse:not(.show) {
+    display: inherit;
 }
