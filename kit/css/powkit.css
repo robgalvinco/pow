@@ -11659,3 +11659,8 @@ aside .instafeed-grid.gutter-double-extra-large { margin-left: -20px; margin-rig
 .course-curriculum__chapter-list .collapse:not(.show) {
     display: inherit;
 }
+
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
