@@ -94,10 +94,6 @@ Plugin URI: https://swiperjs.com
 License: Copyright 2014-2021 Vladimir Kharlampidi | Released under the MIT License | Released on: August 3, 2021
 */
   /* 
-
-----------------------------------
-Table of contents
-
 01. Google font
 02. Reset
 03. Typography
@@ -499,7 +495,6 @@ Table of contents
   /* table style 02 */
   /* rotate box */
   /* image back offset shadow */
-  /* alert message */
   /* ===================================
     26. Footer
 ====================================== */
@@ -547,6 +542,7 @@ Table of contents
   /* contact form */
   /* page loading */
   /*grid*/
+  /* for internet explorer 11 */
   /* for retina */
   /* animation keyframe */
   /* for safari */
@@ -33559,9 +33555,6 @@ Table of contents
 .kapow-loki html {
   -moz-osx-font-smoothing: grayscale;
 }
-.kapow-loki a {
-  text-decoration: none;
-}
 .kapow-loki a:hover,
 .kapow-loki a:focus {
   text-decoration: none;
@@ -33570,13 +33563,11 @@ Table of contents
   color: #0038e3;
 }
 .kapow-loki a,
-.kapow-loki a.nav-link,
 .kapow-loki a:active,
 .kapow-loki a:focus {
   color: #828282;
 }
 .kapow-loki a,
-.kapow-loki a.nav-link,
 .kapow-loki .btn,
 .kapow-loki input,
 .kapow-loki textarea,
@@ -33632,7 +33623,6 @@ Table of contents
   outline: none;
   color: #828282;
   line-height: initial;
-  word-break: initial;
 }
 .kapow-loki select {
   background-image: url(../images/down-arrow.png);
@@ -33645,11 +33635,6 @@ Table of contents
   appearance: none;
   cursor: pointer;
 }
-.kapow-loki input[type=checkbox],
-.kapow-loki input[type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
 .kapow-loki input[type="submit"] {
   width: auto;
 }
@@ -33659,8 +33644,7 @@ Table of contents
 .kapow-loki input[type="search"],
 .kapow-loki input[type="password"],
 .kapow-loki textarea,
-.kapow-loki input[type="submit"],
-.kapow-loki input[type="tel"] {
+.kapow-loki input[type="submit"] {
   -webkit-appearance: none;
 }
 .kapow-loki input:focus,
@@ -33764,43 +33748,6 @@ Table of contents
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-}
-.kapow-loki .container,
-.kapow-loki .container-fluid,
-.kapow-loki .container-lg,
-.kapow-loki .container-md,
-.kapow-loki .container-sm,
-.kapow-loki .container-xl,
-.kapow-loki .container-xxl {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.kapow-loki .row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.kapow-loki .row > * {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.kapow-loki .row.g-0 {
-  margin-right: 0;
-  margin-left: 0;
-}
-.kapow-loki .row.g-0 > * {
-  padding-right: 0;
-  padding-left: 0;
-}
-.kapow-loki header [class^="container-"] [class^="col-"],
-.kapow-loki header [class^="container-"] [class*=" col-"] {
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .kapow-loki :root {
-    scroll-behavior: auto;
-  }
 }
 .kapow-loki .alt-font {
   font-family: 'Poppins', sans-serif;
@@ -42762,7 +42709,6 @@ Table of contents
 .kapow-loki .navbar-brand {
   margin-right: 0;
   font-size: 0;
-  display: inline-block;
 }
 .kapow-loki .dropdown.open > .dropdown-menu {
   display: block;
@@ -42847,7 +42793,7 @@ Table of contents
   position: absolute;
   width: 100%;
 }
-.kapow-loki header .menu-logo-center .menu-logo {
+.kapow-loki .menu-logo-center .menu-logo {
   position: absolute;
   left: 0;
   right: 0;
@@ -43140,9 +43086,6 @@ Table of contents
   border: none;
   vertical-align: middle;
   border-radius: 0;
-}
-.kapow-loki .navbar-toggler:focus {
-  box-shadow: none;
 }
 .kapow-loki .navbar-toggler-line {
   background: #232323;
@@ -44188,9 +44131,6 @@ Table of contents
   z-index: 99999;
   margin-top: 1px;
   border: 0;
-}
-.kapow-loki .header-language.dropdown-style-01 .btn.dropdown-toggle:after {
-  display: none;
 }
 .kapow-loki .megamenu-dropdown-dark .nav-item.dropdown.megamenu .menu-back-div,
 .kapow-loki .megamenu-dropdown-dark .dropdown-menu,
@@ -45897,7 +45837,7 @@ Table of contents
 .kapow-loki .portfolio-scattered.row-cols-lg-3 .col:nth-child(6n+6) .portfolio-box {
   padding: 0 15%;
 }
-.kapow-loki .pagination-style-01 .page-item .page-link.portfolio-scattered.row-cols-xl-4 .col:nth-child(8n+0) .portfolio-box,
+.kapow-loki .pagination-style-01 .page-link.portfolio-scattered.row-cols-xl-4 .col:nth-child(8n+0) .portfolio-box,
 .kapow-loki .portfolio-scattered.row-cols-xl-4 .col:nth-child(8n+1) .portfolio-box,
 .kapow-loki .portfolio-scattered.row-cols-xl-4 .col:nth-child(8n+3) .portfolio-box,
 .kapow-loki .portfolio-scattered.row-cols-xl-4 .col:nth-child(8n+6) .portfolio-box {
@@ -46744,7 +46684,7 @@ Table of contents
   position: relative;
   top: -3px;
 }
-.kapow-loki .pagination-style-01 .page-item .page-link {
+.kapow-loki .pagination-style-01 .page-link {
   border: 0;
   padding: 12px 5px;
   margin: 0 10px;
@@ -46753,7 +46693,6 @@ Table of contents
   min-width: 40px;
   text-align: center;
   border-radius: 100%;
-  line-height: 1.25;
 }
 .kapow-loki .pagination-style-01 .page-item:first-child .page-link,
 .kapow-loki .pagination-style-01 .page-item:last-child .page-link {
@@ -46768,14 +46707,11 @@ Table of contents
   color: #232323;
   box-shadow: none;
 }
-.kapow-loki .pagination-style-01 .page-item .page-link:hover,
-.kapow-loki .pagination-style-01 .page-item.active .page-link {
+.kapow-loki .pagination-style-01 .page-link:hover,
+.kapow-loki .pagination-style-01 .active .page-link {
   background: #fff;
   color: #232323;
   box-shadow: 0 0 10px rgba(23, 23, 23, 0.15);
-}
-.kapow-loki .pagination-style-01 .page-item:first-child .page-link {
-  margin-left: 0;
 }
 .kapow-loki .product-box,
 .kapow-loki .product-box .product-image {
@@ -48593,7 +48529,6 @@ Table of contents
   width: calc(100% - 70px);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
-  white-space: nowrap;
 }
 .kapow-loki .fullscreen-hover-list .hover-list-item .interactive-number {
   opacity: 0.3;
@@ -49341,12 +49276,12 @@ Table of contents
   -webkit-box-flex: 1;
   flex: 1;
 }
-.kapow-loki .feature-box.text-start {
+.kapow-loki .feature-box.text-left {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
-.kapow-loki .feature-box.text-end {
+.kapow-loki .feature-box.text-right {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -49553,7 +49488,6 @@ Table of contents
 }
 .kapow-loki .nav-tabs > li.nav-item > a.nav-link {
   border: none;
-  margin-bottom: 0;
 }
 .kapow-loki .nav-tabs > li.nav-item > a.nav-link {
   border-bottom: 1px solid transparent;
@@ -51115,15 +51049,6 @@ Table of contents
   -webkit-transform: translate(35px, 5px);
   transform: translate(35px, 5px);
 }
-.kapow-loki .alert-dismissible .btn-close {
-  height: 100%;
-  background-size: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.kapow-loki .alert-dismissible .btn-close:focus {
-  box-shadow: none;
-}
 .kapow-loki footer .footer-logo img {
   max-height: 36px;
 }
@@ -51828,10 +51753,10 @@ Table of contents
 .kapow-loki .footer-onepage.footer-dark a:hover {
   color: #F4D956;
 }
-.kapow-loki .loki-parallax-bg {
+.kapow-loki .kapow-loki-parallax-bg {
   width: 870px;
 }
-.kapow-loki .loki-landing-header .navbar-brand:after {
+.kapow-loki .kapow-loki-landing-header .navbar-brand:after {
   background: rgba(130, 130, 130, 0.35);
   content: "";
   height: calc(100% - 18px);
@@ -51858,10 +51783,10 @@ Table of contents
 .kapow-loki .outside-box-bottom {
   margin-bottom: -14vw;
 }
-.kapow-loki .outside-box-text-start {
+.kapow-loki .outside-box-text-left {
   margin-left: -50vw;
 }
-.kapow-loki .outside-box-text-end {
+.kapow-loki .outside-box-text-right {
   margin-right: -50vw;
 }
 .kapow-loki .required.error {
@@ -52036,6 +51961,178 @@ Table of contents
   margin-bottom: 15px;
   padding: 10px 0;
   text-align: center;
+}
+@media screen\0  {
+  .kapow-loki {
+    /* image mask */
+    /* text gradient color */
+    /* input size */
+    /* other */
+    /* home branding agency */
+    /* shop category style 02 */
+    /* tab style 01 */
+  }
+  .kapow-loki .menu-logo-center .menu-logo {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+  .kapow-loki .image-mask {
+    background-image: none !important;
+  }
+  .kapow-loki [class*="text-gradient-"] {
+    background: inherit;
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: inherit;
+  }
+  .kapow-loki .text-gradient-magenta-orange {
+    color: #e42464;
+  }
+  .kapow-loki .text-gradient-magenta-orange-2 {
+    color: #ec606c;
+  }
+  .kapow-loki .text-gradient-purple-magenta {
+    color: #502970;
+  }
+  .kapow-loki .text-gradient-light-purple-light-orange {
+    color: #b783ff;
+  }
+  .kapow-loki .text-gradient-sky-blue-pink {
+    color: #556fff;
+  }
+  .kapow-loki .text-gradient-peacock-blue-crome-yellow {
+    color: #36c1e1;
+  }
+  .kapow-loki .text-gradient-peacock-blue-crome-yellow-2 {
+    color: #5dcaa3;
+  }
+  .kapow-loki .text-gradient-fast-blue-purple {
+    color: #0039e3;
+  }
+  .kapow-loki .text-gradient-tan-geraldine {
+    color: #fb7f87;
+  }
+  .kapow-loki .text-gradient-tussock-greenish-slate {
+    color: #bf8c4c;
+  }
+  .kapow-loki .text-gradient-light-purple-light-red {
+    color: #bb85f9;
+  }
+  .kapow-loki .text-gradient-light-brownish-orange-black {
+    color: #e79e57;
+  }
+  .kapow-loki .text-gradient-turquoise-green-yellowish {
+    color: #3edfb6;
+  }
+  .kapow-loki .text-gradient-red-violet-purple {
+    color: #b93c90;
+  }
+  .kapow-loki .text-gradient-fuego-turquoise {
+    color: #0cd6a2;
+  }
+  .kapow-loki .text-gradient-orange-pink,
+  .kapow-loki .btn-link.text-gradient-orange-pink,
+  .kapow-loki a.text-gradient-orange-pink,
+  .kapow-loki a.text-gradient-orange-pink-hover:hover {
+    color: #ff6557;
+  }
+  .kapow-loki input {
+    line-height: normal;
+  }
+  .kapow-loki .small-input {
+    min-height: 44px;
+    line-height: normal;
+  }
+  .kapow-loki .medium-input,
+  .kapow-loki .medium-select select {
+    min-height: 50px;
+    line-height: normal;
+  }
+  .kapow-loki .large-input {
+    min-height: 57px;
+    line-height: normal;
+  }
+  .kapow-loki .newsletter-style-02 form {
+    line-height: normal;
+  }
+  .kapow-loki .alert-dismissible .close {
+    height: 100%;
+  }
+  .kapow-loki .blog-comment li .btn-reply {
+    border: 1px solid #939393;
+    line-height: normal;
+  }
+  .kapow-loki .price-filter-details .price-filter-amount .price-amount {
+    line-height: normal;
+  }
+  .kapow-loki .coupon-code-panel input {
+    line-height: normal;
+  }
+  .kapow-loki .blog-post .blog-post-image img {
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  .kapow-loki .portfolio-bordered .portfolio-box .portfolio-hover {
+    left: 20px;
+    top: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+  }
+  .kapow-loki .box-shadow-very-light-hover:hover,
+  .kapow-loki .box-shadow-light-hover:hover,
+  .kapow-loki .box-shadow-dark-hover:hover,
+  .kapow-loki .box-shadow-large-hover:hover,
+  .kapow-loki .box-shadow-extra-large-hover:hover,
+  .kapow-loki .box-shadow-medium-hover:hover,
+  .kapow-loki .box-shadow-small-hover:hover,
+  .kapow-loki .box-shadow-double-large-hover:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .kapow-loki .instagram-follow-api {
+    width: 100%;
+  }
+  .kapow-loki .process-step-style-02 .process-step-item {
+    width: 100%;
+  }
+  .kapow-loki .drawing-animation-wrapper .drawing-animation {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .kapow-loki .drawing-animation path,
+  .kapow-loki .drawing-animation circle,
+  .kapow-loki drawing-animation rect,
+  .kapow-loki .drawing-animation polygon,
+  .kapow-loki .drawing-animation ellipse {
+    stroke-dasharray: inherit;
+    stroke-dashoffset: inherit;
+    -webkit-animation: drawing-animation 0s linear forwards;
+    animation: drawing-animation 0s linear forwards;
+  }
+  .kapow-loki .drawing-animation-wrapper svg {
+    transform: scale(3.3) translateX(100px) !important;
+  }
+  .kapow-loki .shop-category-style-02 .shop-product-image img {
+    width: 100%;
+  }
+  .kapow-loki .tab-style-01 .nav-tabs > li.nav-item > a.nav-link:hover + .tab-border {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+  .kapow-loki .parallax,
+  .kapow-loki .fix-background {
+    background-position: top center !important;
+    background-attachment: inherit !important;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
   .kapow-loki .show-notify-popup .mfp-container {
@@ -52712,7 +52809,7 @@ Table of contents
   display: inline-block;
 }
 @media (min-width: 1901px) {
-  .kapow-loki .ka-parallax-bg {
+  .kapow-loki .kapow-loki-parallax-bg {
     width: 45%;
   }
 }
@@ -56559,7 +56656,7 @@ Table of contents
     padding-left: 30px;
     padding-right: 30px;
   }
-  .kapow-loki .home-digital-agency .outside-box-text-end .text-extra-big-2 {
+  .kapow-loki .home-digital-agency .outside-box-text-right .text-extra-big-2 {
     font-size: 250px;
   }
   .kapow-loki .home-design-agency .outside-box-left {
@@ -56568,7 +56665,7 @@ Table of contents
   .kapow-loki .home-photography .interactive-banners-style-13 .interactive-banners-content {
     width: 40%;
   }
-  .kapow-loki .loki-parallax-bg {
+  .kapow-loki .kapow-loki-parallax-bg {
     width: 800px;
   }
 }
@@ -60994,7 +61091,7 @@ Table of contents
   .kapow-loki .banner-bottom-right-images > img {
     bottom: -65px;
   }
-  .kapow-loki .home-digital-agency .outside-box-text-end .text-extra-big-2 {
+  .kapow-loki .home-digital-agency .outside-box-text-right .text-extra-big-2 {
     font-size: 200px;
   }
   .kapow-loki footer.home-marketing-agency .footer-horizontal-link li {
@@ -61020,7 +61117,7 @@ Table of contents
   .kapow-loki .content-box-image {
     height: 225px;
   }
-  .kapow-loki .loki-parallax-bg {
+  .kapow-loki .kapow-loki-parallax-bg {
     width: 620px;
   }
   .kapow-loki .customer-bg-section {
@@ -61172,7 +61269,7 @@ Table of contents
   .kapow-loki .sticky .navbar.navbar-dark .navbar-nav .nav-link,
   .kapow-loki .sticky .navbar.navbar-light .navbar-nav .nav-link,
   .kapow-loki header.sticky .navbar.top-logo .navbar-nav .nav-link {
-    color: #232323;
+    color: #000;
     padding: 9px 15px;
     margin: 0;
   }
@@ -61221,7 +61318,7 @@ Table of contents
     border-right: none;
     padding-right: 0;
   }
-  .kapow-loki header .menu-logo-center .menu-logo {
+  .kapow-loki .menu-logo-center .menu-logo {
     position: relative;
     left: auto;
     text-align: left;
@@ -61240,7 +61337,7 @@ Table of contents
     width: 100%;
   }
   .kapow-loki .sticky .navbar.header-dark .navbar-nav .nav-link {
-    color: #232323 !important;
+    color: #000 !important;
   }
   .kapow-loki .navbar-nav .nav-item:last-child .menu-back-div,
   .kapow-loki .navbar-nav .nav-item:last-child .menu-back-div ul:last-child {
@@ -61254,7 +61351,7 @@ Table of contents
   .kapow-loki .nav-item.dropdown.megamenu .menu-back-div {
     display: none;
   }
-  .kapow-loki .nav-item.dropdown.megamenu .menu-back-div.show {
+  .kapow-loki .nav-item.dropdown.megamenu.show .menu-back-div {
     display: block;
   }
   .kapow-loki .nav-item.dropdown.megamenu .menu-back-div,
@@ -61328,8 +61425,7 @@ Table of contents
   .kapow-loki .nav-item.dropdown.simple-dropdown .dropdown-menu .dropdown-menu {
     padding: 0;
   }
-  .kapow-loki .nav-item.dropdown.simple-dropdown .dropdown-menu.show,
-  .kapow-loki .nav-item.dropdown.simple-dropdown .dropdown-menu.show .dropdown-menu {
+  .kapow-loki .nav-item.dropdown.simple-dropdown.show .dropdown-menu {
     display: block;
   }
   .kapow-loki .nav-item.dropdown.simple-dropdown .dropdown-menu .dropdown a {
@@ -61338,7 +61434,7 @@ Table of contents
     margin-bottom: 5px;
   }
   .kapow-loki .nav-item.dropdown.simple-dropdown .dropdown-menu > .dropdown > a {
-    color: #232323;
+    color: #000;
     margin: 15px 0 7px 0;
     font-size: 14px;
     font-weight: 500;
@@ -61346,22 +61442,16 @@ Table of contents
   .kapow-loki .megamenu-dropdown-dark {
     background-color: #232323;
   }
-  .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown > a,
-  .kapow-loki .navbar.navbar-dark .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown > a {
+  .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown > a {
     color: #fff !important;
   }
-  .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.active > a,
-  .kapow-loki .navbar.navbar-dark .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.active > a {
+  .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.active > a {
     color: rgba(255, 255, 255, 0.6) !important;
   }
   .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown:hover > a,
   .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.megamenu:hover > a,
   .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.simple-dropdown:hover > a,
-  .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown > a:hover,
-  .kapow-loki .navbar.navbar-dark .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown:hover > a,
-  .kapow-loki .navbar.navbar-dark .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.megamenu:hover > a,
-  .kapow-loki .navbar.navbar-dark .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown.simple-dropdown:hover > a,
-  .kapow-loki .navbar.navbar-dark .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown > a:hover {
+  .kapow-loki .navbar.navbar-light .navbar-nav.megamenu-dropdown-dark .nav-item.dropdown > a:hover {
     color: #fff !important;
   }
   .kapow-loki .megamenu-dropdown-dark .dropdown-menu.megamenu-content li.active a {
@@ -66818,7 +66908,7 @@ Table of contents
   .kapow-loki .home-consulting .popup-youtube.absolute-middle-center {
     left: 50%;
   }
-  .kapow-loki .home-digital-agency .outside-box-text-end .text-extra-big-2 {
+  .kapow-loki .home-digital-agency .outside-box-text-right .text-extra-big-2 {
     font-size: 150px;
   }
   .kapow-loki .home-design-agency .outside-box-left {
@@ -66864,10 +66954,10 @@ Table of contents
   .kapow-loki .show-notify-popup .mfp-container {
     padding-top: 30px;
   }
-  .kapow-loki .loki-landing-header .navbar-brand:after {
+  .kapow-loki .kapow-loki-landing-header .navbar-brand:after {
     display: none;
   }
-  .kapow-loki .loki-parallax-bg {
+  .kapow-loki .kapow-loki-parallax-bg {
     width: 60%;
     right: -90px;
   }
@@ -67147,7 +67237,6 @@ Table of contents
     /* elements social icon page */
     /*home decor*/
     /* text shadow */
-    /* horizontal portfolio slider */
   }
   .kapow-loki html {
     font-size: 11px;
@@ -71796,9 +71885,6 @@ Table of contents
   .kapow-loki .sm-no-text-shadow {
     text-shadow: none;
   }
-  .kapow-loki .horizontal-portfolio-slider-main .horizontal-portfolio-slider .swiper-slide {
-    height: auto;
-  }
 }
 @media screen and (max-width: 575px) {
   .kapow-loki {
@@ -76259,7 +76345,7 @@ Table of contents
   .kapow-loki .latest-post-sidebar li figure {
     width: 80px;
   }
-  .kapow-loki .pagination-style-01 .page-item .page-link {
+  .kapow-loki .pagination-style-01 .page-link {
     margin: 0 5px;
   }
   .kapow-loki .newsletter-email input {
@@ -76379,7 +76465,7 @@ Table of contents
     font-size: 60px;
     line-height: 65px;
   }
-  .kapow-loki .loki-parallax-bg {
+  .kapow-loki .kapow-loki-parallax-bg {
     right: 0px;
     top: -50px;
   }
