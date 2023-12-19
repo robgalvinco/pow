@@ -1,99 +1,4 @@
-.powkit-loki {
-  @charset "UTF-8";
-  /*
-Themify
-Version: 1.0.1
-Plugin URI: https://github.com/lykmapipo/themify-icons#themify-icons
-License: Themify Icons font licensed under: http://scripts.sil.org/OFL
-*/
-  /*
-Simple line
-Plugin URI: https://simplelineicons.github.io/
-*/
-  /*
-Feather
-Plugin URI: https://feathericons.com/
-*/
-  /*
-ET Line
-Plugin URI: https://museomix.be/doc/Icons-ET-LineIcons.html
-*/
-  /*
-Icons mind
-Plugin URI: https://iconsmind.com/view_icons/
-*/
-  /*!
- * animate.css - https://animate.style/
- * Version - 4.1.1
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2020 Animate.css
- */
-  /* Attention seekers  */
-  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-  /* Back entrances */
-  /* Back exits */
-  /* Bouncing entrances  */
-  /* Bouncing exits  */
-  /* Fading entrances  */
-  /* Fading exits */
-  /* Flippers */
-  /* Lightspeed */
-  /* Rotating entrances */
-  /* Rotating exits */
-  /* Specials */
-  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-  /* Zooming entrances */
-  /* Zooming exits */
-  /* Sliding entrances */
-  /* Sliding exits */
-  /*
-Animated headlines
-Plugin URI: https://codyhouse.co/gem/css-animated-headlines/
-*/
-  /*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-  /*# sourceMappingURL=bootstrap.css.map */
-  /*
-Custom scrollbar - jquery mousewheel plugin
-Version: 3.1.13
-Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
-License: Copyright Manos Malihutsakis | Released under the MIT license
-*/
-  /*
-jQuery UI
-Version: 1.12.1 - 2016-09-14
-Plugin URI: http://jqueryui.com
-* Includes: core.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, draggable.css, resizable.css, progressbar.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Arial%2CHelvetica%2Csans-serif&fsDefault=1em&fwDefault=normal&cornerRadius=3px&bgColorHeader=e9e9e9&bgTextureHeader=flat&borderColorHeader=dddddd&fcHeader=333333&iconColorHeader=444444&bgColorContent=ffffff&bgTextureContent=flat&borderColorContent=dddddd&fcContent=333333&iconColorContent=444444&bgColorDefault=f6f6f6&bgTextureDefault=flat&borderColorDefault=c5c5c5&fcDefault=454545&iconColorDefault=777777&bgColorHover=ededed&bgTextureHover=flat&borderColorHover=cccccc&fcHover=2b2b2b&iconColorHover=555555&bgColorActive=007fff&bgTextureActive=flat&borderColorActive=003eff&fcActive=ffffff&iconColorActive=ffffff&bgColorHighlight=fffa90&bgTextureHighlight=flat&borderColorHighlight=dad55e&fcHighlight=777620&iconColorHighlight=777620&bgColorError=fddfdf&bgTextureError=flat&borderColorError=f1a899&fcError=5f3f3f&iconColorError=cc0000&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=666666&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=5px&offsetTopShadow=0px&offsetLeftShadow=0px&cornerRadiusShadow=8px
-License: Copyright jQuery Foundation and other contributors | Released under the MIT License
-*/
-  /*
-justifiedGallery
-Version: 3.8.1
-Plugin URI: http://miromannino.github.io/Justified-Gallery/
-License: Copyright (c) 2020 Miro Mannino | Licensed under the MIT license
-*/
-  /*
-Magnific popup
-Version: 1.1.0 - 2016-02-20
-Plugin URI: http://dimsemenov.com/plugins/magnific-popup/
-License: Copyright (c) 2016 Dmitry Semenov
-*/
-  /*
-Swiper
-Version: 6.8.1
-Most modern mobile touch slider and framework with hardware accelerated transitions
-Plugin URI: https://swiperjs.com
-License: Copyright 2014-2021 Vladimir Kharlampidi | Released under the MIT License | Released on: August 3, 2021
-*/
-}
+
 @font-face {
   font-family: themify;
   src: url(../fonts/themify.eot?-fvbane);
@@ -19854,21 +19759,29 @@ License: Copyright 2014-2021 Vladimir Kharlampidi | Released under the MIT Licen
   top: -0.5em;
 }
 .powkit-loki a {
+/*
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
+  */
 }
 .powkit-loki a:hover {
+  /*
   color: #0056b3;
   text-decoration: underline;
+  */
 }
 .powkit-loki a:not([href]):not([class]) {
+  /*
   color: inherit;
   text-decoration: none;
+  */
 }
 .powkit-loki a:not([href]):not([class]):hover {
+  /*
   color: inherit;
   text-decoration: none;
+  */
 }
 .powkit-loki pre,
 .powkit-loki code,
